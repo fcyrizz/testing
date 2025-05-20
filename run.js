@@ -22,7 +22,7 @@ async function main() {
   console.log('Starting Whisper.cpp installation process...');
   
   // Update package list
-  await runCommand('apt update', 'Updating package list');
+  // await runCommand('apt update', 'Updating package list');
   
   // Install cmake
   // await runCommand('apt install cmake -y', 'Installing cmake');
