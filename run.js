@@ -41,7 +41,7 @@ async function main() {
   await runCommand('cmake --build build --config Release', 'Building whisper.cpp');
   
   // Run whisper-cli with sample file
-  await runCommand('./build/bin/whisper-cli -f samples/jfk.wav', 'Running whisper-cli with JFK sample');
+  await runCommand('./build/bin/whisper-cli -m models/ggml-tiny.en-q5_1.bin ./samples/jfk.wav', 'Running whisper-cli with JFK sample');
   
   console.log('\nProcess completed successfully!');
 }
