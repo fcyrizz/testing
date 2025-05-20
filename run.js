@@ -34,7 +34,7 @@ async function main() {
   process.chdir('whisper.cpp');
   
   // Download model
-  await runCommand('sh ./models/download-ggml-model.sh tiny.en-q5_1', 'Downloading tiny.en-q5_1 model');
+  await runCommand('wget https://huggingface.co/litonglinux/whisper-cpp-wasm/resolve/main/ggml-model-whisper-tiny.en-q5_1.bin -O ./models/ggml-tiny.en-q5_1.bin', 'Downloading tiny.en-q5_1 model');
   
   // Build with cmake
   await runCommand('cmake -B build', 'Configuring build with cmake');
