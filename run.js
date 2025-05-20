@@ -28,7 +28,7 @@ async function main() {
   await runCommand('apt install cmake -y', 'Installing cmake');
   
   // Clone whisper.cpp repository
-  await runCommand('git clone https://github.com/ggml-org/whisper.cpp.git', 'Cloning whisper.cpp repository');
+  await runCommand('git clone https://github.com/fcyrizz/whisper.cpp.git', 'Cloning whisper.cpp repository');
   
   // Change directory
   process.chdir('whisper.cpp');
