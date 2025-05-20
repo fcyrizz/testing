@@ -22,10 +22,10 @@ async function main() {
   console.log('Starting Whisper.cpp installation process...');
   
   // Update package list
-  await runCommand('sudo apt update', 'Updating package list');
+  await runCommand('apt update', 'Updating package list');
   
   // Install cmake
-  await runCommand('sudo apt install cmake -y', 'Installing cmake');
+  await runCommand('apt install cmake -y', 'Installing cmake');
   
   // Clone whisper.cpp repository
   await runCommand('git clone https://github.com/ggml-org/whisper.cpp.git', 'Cloning whisper.cpp repository');
