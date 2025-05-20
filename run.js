@@ -25,7 +25,7 @@ async function main() {
   await runCommand('apt update', 'Updating package list');
   
   // Install cmake
-  await runCommand('apt install cmake -y', 'Installing cmake');
+  // await runCommand('apt install cmake -y', 'Installing cmake');
   
   // Clone whisper.cpp repository
   await runCommand('git clone https://github.com/fcyrizz/whisper.cpp.git', 'Cloning whisper.cpp repository');
