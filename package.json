@@ -1,0 +1,16 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "run.js",
+  "scripts": {
+    "build": "node run.js",
+    "start": "node whisper.cpp/server.js",
+    "vercel-build": "npm run build"
+  },
+  "dependencies": {
+    // your dependencies here
+  },
+  "devDependencies": {
+    // dev dependencies here
+  }
+}
