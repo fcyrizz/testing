@@ -28,13 +28,13 @@ async function main() {
   // await runCommand('apt install cmake -y', 'Installing cmake');
   
   // Clone whisper.cpp repository
-  await runCommand('git clone https://github.com/fcyrizz/whisper.cpp.git', 'Cloning whisper.cpp repository');
+  // await runCommand('git clone https://github.com/fcyrizz/whisper.cpp.git', 'Cloning whisper.cpp repository');
   
   // Change directory
   process.chdir('whisper.cpp');
   
   // Download model
-  await runCommand('wget https://huggingface.co/litonglinux/whisper-cpp-wasm/resolve/main/ggml-model-whisper-tiny.en-q5_1.bin -O ./models/ggml-tiny.en-q5_1.bin', 'Downloading tiny.en-q5_1 model');
+  // await runCommand('wget https://huggingface.co/litonglinux/whisper-cpp-wasm/resolve/main/ggml-model-whisper-tiny.en-q5_1.bin -O ./models/ggml-tiny.en-q5_1.bin', 'Downloading tiny.en-q5_1 model');
   
   // Build with cmake
   await runCommand('cmake -B build', 'Configuring build with cmake');
